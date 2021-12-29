@@ -1,0 +1,47 @@
+This is a first pass at the specification
+===Date
+date // clinic date
+
+===Patient
+name and address go here
+or
+@patient //  takes the patient from the off a database specified in the template file
+NHI: nhi number
+DOB: date-of-birth
+M: mobile phone
+P: landline
+E: email
+
+===GP
+GP address goes here,or
+@GP // takes the GP from the off a database specified in the template file
+
+===Diagnoses
+A list of diagnoses goes here separated by a Line Feed
+- If the item below a diagnoses is preceded by a dash, it's a comment on the diagnosis
+
+===Medications
+A list of medications goes here
+@medications // pulls the list of medications off a database specified in the template file
+
+===DMARDS
+a list of previous medications tried
+@dmards // pulls the list of dmards off a database specified in the template file
+
+===Vitals
+BP, weight, height, BMI, O2 saturation, temp
+
+===Body
+of the letter goes here
+
+===ToDo
+List of actionables that need to be tracked
+
+===Actionables
+List of actions GP is to do
+
+###
+hidden stuff goes here
+as well as directives
+template: @gchiu // uses the configuration file found in gchiu.config
+###
